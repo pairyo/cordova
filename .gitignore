@@ -1,0 +1,7 @@
+*.swp
+
+platforms/ios/build/
+platforms/ios/CordovaLib/build/
+
+platforms/android/build/
+platforms/android/CordovaLib/build
