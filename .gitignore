@@ -1,7 +1,19 @@
+# MAC
+.DS_Store
+
+# Vim backup file
 *.swp
 
+# Node
+npm-debug.log
+/node_modules
+
+# iOS
 platforms/ios/build/
 platforms/ios/CordovaLib/build/
+*.xcuserdatad
+*.xcworkspace
 
+# Android
 platforms/android/build/
-platforms/android/CordovaLib/build
+platforms/android/CordovaLib/build/
