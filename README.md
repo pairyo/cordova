@@ -1,2 +1,3 @@
 # cordova
-## It's fucking awesome.
+
+It's fucking awesome and fantastic.
