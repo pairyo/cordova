@@ -17,3 +17,6 @@ platforms/ios/CordovaLib/build/
 # Android
 platforms/android/build/
 platforms/android/CordovaLib/build/
+platforms/android/.idea/
+platforms/android/.gradle/
+*.iml
