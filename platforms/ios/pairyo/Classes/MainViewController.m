@@ -67,8 +67,29 @@
 {
     // View defaults to full size.  If you want to customize the view's size, or its subviews (e.g. webView),
     // you can do so here.
-
+    NSString* URL = @"www.pairyo.com";
+    NSData* data = [[NSUserDefaults standardUserDefaults] dataForKey:URL];
+    NSArray* allCookies = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+    
+    for (NSHTTPCookie* cookie in allCookies) {
+        [[NSHTTPCookieStorage sharedHTTPCookieStorage] setCookie:cookie];
+    }
+    
     [super viewWillAppear:animated];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    NSString* URL = @"www.pairyo.com";
+    NSArray* allCookies = [[NSHTTPCookieStorage sharedHTTPCookieStorage] cookies];
+//    NSMutableArray* namesOfAllCookies = [NSMutableArray array];
+    
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:URL];
+    
+    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:allCookies];
+    [[NSUserDefaults standardUserDefaults] setObject:data forKey:URL];
+    
+    [super viewWillDisappear:animated];
 }
 
 - (void)viewDidLoad

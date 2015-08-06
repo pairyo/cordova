@@ -22,5 +22,13 @@
         },
         "is_top_level": true,
         "variables": {}
+    },
+    "com.cordova.plugins.cookiemaster": {
+        "source": {
+            "type": "registry",
+            "id": "com.cordova.plugins.cookiemaster"
+        },
+        "is_top_level": true,
+        "variables": {}
     }
 }
