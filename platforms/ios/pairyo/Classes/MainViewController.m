@@ -82,7 +82,6 @@
 {
     NSString* URL = @"www.pairyo.com";
     NSArray* allCookies = [[NSHTTPCookieStorage sharedHTTPCookieStorage] cookies];
-//    NSMutableArray* namesOfAllCookies = [NSMutableArray array];
     
     [[NSUserDefaults standardUserDefaults] removeObjectForKey:URL];
     

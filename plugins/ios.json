@@ -34,7 +34,13 @@
                             "xml": false,
                             "count": 1
                         }
-                    ]
+                    ],
+                    "AssetsLibrary.framework": [],
+                    "MobileCoreServices.framework": [],
+                    "libz.dylib": [],
+                    "CFNetwork.framework": [],
+                    "SystemConfiguration.framework": [],
+                    "WebKit.framework": []
                 }
             }
         }
