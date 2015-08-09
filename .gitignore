@@ -19,4 +19,5 @@ platforms/android/build/
 platforms/android/CordovaLib/build/
 platforms/android/.idea/
 platforms/android/.gradle/
+platforms/android/res/xml/config.xml
 *.iml
